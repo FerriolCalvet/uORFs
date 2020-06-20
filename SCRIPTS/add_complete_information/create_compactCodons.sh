@@ -8,14 +8,21 @@
 
 # Receive the input from the command line arguments
 #      $1, $2, $3 ...
-home="/home/fcalvet/Desktop/uORFs";
+
+
+# home="/home/fcalvet/Desktop/uORFs";
+home="../..";
 codon_type=$1; # either start or stop
+
 
 # Create the folders needed
 # mkdir -p "$home/uORFs" "$home/uORFs/SCRIPTS" "$home/uORFs/DATA";
 # mkdir -p "$home/DATA/raw_data/raw_StartCodons";
 # mkdir -p "$home/DATA/compact/StartCodons";
 
+mkdir -p "$home/DATA/";
+mkdir -p "$home/DATA/compact/";
+mkdir -p "$home/DATA/raw_data/";
 mkdir -p "$home/DATA/raw_data/raw_${codon_type}Codons";
 mkdir -p "$home/DATA/compact/${codon_type}Codons";
 
@@ -34,7 +41,7 @@ sed -e 's/[;=]/\t/g' $codons_all_info | cut -f 1,2,4,5,7,14,16 | sed 's/\./\t/g'
 
 
 
-python_script="${home}/SCRIPTS/global_scripts/group_Codons.py";
+python_script="${home}/SCRIPTS/add_complete_information/group_Codons.py";
 python_script_output="${home}/DATA/compact/${codon_type}Codons/compact_reduced_${codon_type}_codon.gff3";
 
 # Run this python script to group the lines that are identical uORFs with different transcript/gene IDs

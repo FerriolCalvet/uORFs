@@ -1,8 +1,9 @@
+home="../..";
+# home="/home/fcalvet/Desktop/uORFs";
 
-home="/home/fcalvet/Desktop/uORFs";
 
 riboseq_home="${home}/REFERENCE_DATA/riboseq";
-riboseq_software="/home/fcalvet/Desktop/uORFs/REFERENCE_DATA/riboseq/software";
+riboseq_software="${home}/REFERENCE_DATA/riboseq/software";
 
 
 

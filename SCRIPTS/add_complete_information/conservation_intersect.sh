@@ -1,9 +1,10 @@
-
-home="/home/fcalvet/Desktop/uORFs";
-
+home="../..";
 
 conservation_home="${home}/REFERENCE_DATA/conservation";
-riboseq_software="/home/fcalvet/Desktop/uORFs/REFERENCE_DATA/riboseq/software";
+riboseq_software="${home}/REFERENCE_DATA/riboseq/software";
+
+
+
 
 #### uncompress the alignments into bedgraph format
 # http://hgdownload.cse.ucsc.edu/goldenpath/hg38/phastCons100way/hg38.phastCons100way.bw

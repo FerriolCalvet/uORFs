@@ -17,13 +17,21 @@ print(short_name)
 output_filename = sys.argv[2]
 
 # Reference files
-home="/home/fcalvet/Desktop"
-expression_file=home+"/yale_pipeline/GTEX_tissue_meanexpression_entropy_no_version.tsv"
-homologs_list=home+'/uORFs/REFERENCE_DATA/orthologues/human_to_mouse_ortholog_one2one_high_conf.tsv'
-genes_with_uorfs_mouse=home+'/uORFs/REFERENCE_DATA/orthologues/genes_with_uORFs_in_mouse'
+# home="/home/fcalvet/Desktop/uORFs"
+home="../.."
+
+ref_home = home+"/REFERENCE_DATA"
+
+# expression_file="/home/fcalvet/Desktop/yale_pipeline/GTEX_tissue_meanexpression_entropy_no_version.tsv"
+expression_file=ref_home+"/expression/GTEX_tissue_meanexpression_entropy_no_version.tsv"
+
+homologs_list=ref_home+'/orthologues/human_to_mouse_ortholog_one2one_high_conf.tsv'
+
+genes_with_uorfs_mouse=ref_home+'/orthologues/genes_with_uORFs_in_mouse'
 
 # For all near cognate start codons
-# genes_with_uorfs_mouse=home+'/uORFs/REFERENCE_DATA/orthologues/genes_with_uORFs_in_mouse_all_near_cognate'
+#genes_with_uorfs_mouse=ref_home+'/orthologues/genes_with_uORFs_in_mouse_all_near_cognate'
+
 
 
 
