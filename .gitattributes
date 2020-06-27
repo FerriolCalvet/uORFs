@@ -2,3 +2,14 @@
 *.bw filter=lfs diff=lfs merge=lfs -text
 *.bg filter=lfs diff=lfs merge=lfs -text
 *.gff3 filter=lfs diff=lfs merge=lfs -text
+
+
+*.0 linguist-language=Text
+*.1 linguist-language=Text
+*.2 linguist-language=Text
+*.3 linguist-language=Text
+*.4 linguist-language=Text
+*.5 linguist-language=Text
+*.6 linguist-language=Text
+*.7 linguist-language=Text
+*.8 linguist-language=Text
