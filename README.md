@@ -59,5 +59,11 @@ see http://www.ensembl.org/info/docs/api/api_installation.html for the installat
 GitTools installation recommended in order to manage version updates easily.
 
 
+#### Dependencies
+
+For the execution, there are some additional dependencies of Perl modules. The following lines allow you to download the corresponding libraries in a Linux system, but there are other ways to install these dependencies.
+
+sudo apt-get install -y libparallel-forkmanager-perl
+sudo apt-get install -y libdbd-mysql-perl
 
 
